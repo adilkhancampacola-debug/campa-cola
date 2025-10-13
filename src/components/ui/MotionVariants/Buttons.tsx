@@ -54,7 +54,7 @@ export const GradientPrimaryButton = ({ label }: ButtonProp) => {
       >
         {label}
         <Image
-          src="https://res.cloudinary.com/dfe8sdlkc/image/upload/v1749540349/Arrow_Up_Right_Contained_2_kxlkad.svg"
+          src="https://res.cloudinary.com/dtnjzzif3/image/upload/v1760338183/Arrow_Up_Right_Contained_d26p9f.svg"
           width={35.751}
           height={35.751}
           alt=""
