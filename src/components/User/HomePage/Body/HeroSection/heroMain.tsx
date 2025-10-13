@@ -30,7 +30,7 @@ export const HeroMain = () => {
           className="absolute opacity-100  inset-0 md:opacity-80  "
         />
         <Image
-          src="https://res.cloudinary.com/dfe8sdlkc/image/upload/v1749539914/Main_Image_1_xa8onl.svg"
+          src="https://res.cloudinary.com/dtnjzzif3/image/upload/v1760338184/Main_Image_1_j2h71l.svg"
           width={813}
           height={826}
           alt="hero main img"
