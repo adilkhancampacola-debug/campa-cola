@@ -110,7 +110,7 @@ export const ProductsMain = () => {
                 personality will surely make your heart skip a beat!
               </TitleDescription>
               <Image
-                src="https://res.cloudinary.com/dfe8sdlkc/image/upload/v1749541411/INDIA_FINAL_b8d06bf716-1011x1024_2_1_kcq8xg.svg"
+                src="https://res.cloudinary.com/dtnjzzif3/image/upload/v1760338177/INDIA_FINAL_b8d06bf716-1011x1024_2_pfjnaa.svg"
                 height={599}
                 width={591}
                 placeholder="blur"
@@ -134,7 +134,7 @@ export const ProductsMain = () => {
             ))}
             <div className="flex flex-col 1.5md:flex-row items-center justify-center 1.5lg:justify-between ">
               <Image
-                src="https://res.cloudinary.com/dfe8sdlkc/image/upload/v1749541751/Campa_Cola_8728b089e2-1011x1024_2_2_uwgpjx.svg"
+                src="https://res.cloudinary.com/dtnjzzif3/image/upload/v1760338177/Campa_Cola_8728b089e2-1011x1024_2_notufk.svg"
                 height={602}
                 width={594}
                 alt="join the campa revolution image"
