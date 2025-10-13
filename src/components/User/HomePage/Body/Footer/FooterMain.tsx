@@ -27,7 +27,7 @@ export const FooterMain = () => {
           <div className="flex flex-col space-y-8">
             <div className="flex-shrink-0 flex justify-center">
               <Image
-                src="https://res.cloudinary.com/dfe8sdlkc/image/upload/v1749541502/Untitled-155-x-90-px-1_1_1_wez3pu.svg"
+                src="https://res.cloudinary.com/dtnjzzif3/image/upload/v1760338174/Untitled-155-x-90-px-1_1_nfhqrv.svg"
                 alt="Campa Cola Logo"
                 width={255}
                 height={148}
