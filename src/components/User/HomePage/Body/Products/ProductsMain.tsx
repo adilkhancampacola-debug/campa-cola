@@ -12,22 +12,22 @@ export const ProductsMain = () => {
   const ProductsUrl = [
     {
       imgUrl:
-        "https://res.cloudinary.com/dfe8sdlkc/image/upload/v1749541423/Untitled-design-17-768x1280_1_1_stqc4r.svg",
+        "https://res.cloudinary.com/dtnjzzif3/image/upload/v1760338180/Untitled-design-15-768x1280_1_omzhwm.svg",
       imgTitle: "campa cola image"
     },
     {
       imgUrl:
-        "https://res.cloudinary.com/dfe8sdlkc/image/upload/v1749541420/Untitled-design-18-768x1280_1_1_n79mq9.svg",
+        "https://res.cloudinary.com/dtnjzzif3/image/upload/v1760338181/Untitled-design-18-768x1280_1_bjaqk2.svg",
       imgTitle: "campa orange image"
     },
     {
       imgUrl:
-        "https://res.cloudinary.com/dfe8sdlkc/image/upload/v1749541417/Untitled-design-15-768x1280_1_1_fwbnoo.svg",
+        "https://res.cloudinary.com/dtnjzzif3/image/upload/v1760338179/Untitled-design-19-768x1280_1_gld05y.svg",
       imgTitle: "campa lemon image"
     },
     {
       imgUrl:
-        "https://res.cloudinary.com/dfe8sdlkc/image/upload/v1749541416/Untitled-design-19-768x1280_1_1_imue35.svg",
+        "https://res.cloudinary.com/dtnjzzif3/image/upload/v1760338180/Untitled-design-17-768x1280_1_gyw8dw.svg",
       imgTitle: "campa powerup image"
     }
   ];
