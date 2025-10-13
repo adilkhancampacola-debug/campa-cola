@@ -42,7 +42,7 @@ export const HeroMain = () => {
         <div className="flex flex-col justify-center items-center w-full max-w-6xl gap-[25px] 0.5sm:gap-0 sm:w-auto pt-2">
           <div className="flex justify-center w-full sm:w-auto">
             <Image
-              src="https://res.cloudinary.com/dfe8sdlkc/image/upload/v1749539914/Hero_Image_1_ovu7jh.svg"
+              src="https://res.cloudinary.com/dtnjzzif3/image/upload/v1760337883/Hero_Image_vjsllm.svg"
               className="w-1/6 block  sm:w-full h-auto"
               height={179}
               width={206.447}
