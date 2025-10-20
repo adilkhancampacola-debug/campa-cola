@@ -1,7 +1,6 @@
 import dbConnect from "@/lib/dbConnect";
 import User, { FinalForm } from "@/model/User";
 import generateRandomPassword from "@/helpers/generatePassword";
-import { sendVerifiedEmail } from "@/helpers/sendVerifiedMail";
 import { createErrorResponse } from "@/helpers/createErrorResponse";
 // import { adminAuthMiddleware } from "@/app/middlewares/AdminAuth";
 import { NextRequest } from "next/server";
@@ -136,10 +135,6 @@ export async function PUT(request: NextRequest) {
         status: 404,
         headers: { "Content-Type": "application/json" }
       });
-    }
-
-    if (isVerify) {
-      await sendVerifiedEmail(updatedUser);
     }
 
     const message = isVerify
