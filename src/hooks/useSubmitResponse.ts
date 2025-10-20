@@ -1,5 +1,4 @@
 import axios, { AxiosError } from "axios";
-import { useState } from "react";
 import { toast } from "react-hot-toast";
 
 interface FormSubmitParams<T> {
@@ -15,10 +14,8 @@ export const useFormSubmit = <T>({
   successMessage = "Form submitted successfully!",
   mainForm
 }: FormSubmitParams<T>) => {
-  const [loading,setLoading]=useState(false);
   const submit = async (data: Record<string, unknown>): Promise<void> => {
     try {
-      setLoading(true);
       console.log("Submitting form data:", data);
 
       const response = await axios.post<T>(
@@ -29,15 +26,12 @@ export const useFormSubmit = <T>({
       console.log("Form submission response:", response.data);
 
       if (response.status === 200) {
-        setLoading(false);
         toast.success(successMessage);
         // if (onSuccess) {
         //   onSuccess(response.data);
         // }
-
       } else {
         toast.error("Submission failed.");
-        setLoading(false);
       }
     } catch (error) {
       console.error("Form submission error:", error);
@@ -48,7 +42,6 @@ export const useFormSubmit = <T>({
       } else {
         toast.error("An unexpected error occurred during submission.");
       }
-      setLoading(false);
 
       // if (onError) {
       //   onError(error);
@@ -56,5 +49,5 @@ export const useFormSubmit = <T>({
     }
   };
 
-  return { submit,loading };
+  return { submit };
 };

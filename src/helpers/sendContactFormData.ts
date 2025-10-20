@@ -1,6 +1,7 @@
 import { resend } from "@/lib/resend";
 
 import { ResponseEmail } from "@/emails/responseEmail";
+
 import { ApiResponse } from "@/types/ApiResponse";
 import { EmailDataProp } from "@/types/EmailData";
 

@@ -1,5 +1,5 @@
 import generateRandomPassword from "@/helpers/generatePassword";
-// import { sendResponseEmail } from "@/helpers/sendContactFormData";
+import { sendResponseEmail } from "@/helpers/sendContactFormData";
 import dbConnect from "@/lib/dbConnect";
 import User from "@/model/User";
 // import { userAuthMiddleware } from "@/app/middlewares/UserAuth";
@@ -48,19 +48,19 @@ export async function POST(request: NextRequest) {
     }
 
     console.log("b", Business_Types, "i", Investment_Plan);
-    // await sendResponseEmail({
-    //   firstname,
-    //   landmark,
-    //   lastname,
-    //   city,
-    //   state,
-    //   street,
-    //   mobile,
-    //   Investment_Plan,
-    //   pincode,
-    //   business_Types: Business_Types,
-    //   email
-    // });
+    await sendResponseEmail({
+      firstname,
+      landmark,
+      lastname,
+      city,
+      state,
+      street,
+      mobile,
+      Investment_Plan,
+      pincode,
+      business_Types: Business_Types,
+      email
+    });
 
     const newUser = await User.create({
       firstname,
@@ -69,9 +69,6 @@ export async function POST(request: NextRequest) {
       mobile,
       state,
       city,
-      landmark,
-      street,
-      pincode,
       // send_email,
       Investment_Plan,
       business_Types: Business_Types
