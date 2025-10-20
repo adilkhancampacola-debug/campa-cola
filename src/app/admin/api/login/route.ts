@@ -1,7 +1,6 @@
 import dbConnect from "@/lib/dbConnect";
 import User from "@/model/User";
 import generateRandomPassword from "@/helpers/generatePassword";
-import { sendVerifiedEmail } from "@/helpers/sendVerifiedMail";
 
 export async function PUT(request: Request) {
   await dbConnect();
@@ -83,10 +82,6 @@ export async function PUT(request: Request) {
       });
     }
 
-    // Send email if verified
-    if (isVerify) {
-      await sendVerifiedEmail({ ...updatedUser });
-    }
 
     return new Response(
       JSON.stringify({
