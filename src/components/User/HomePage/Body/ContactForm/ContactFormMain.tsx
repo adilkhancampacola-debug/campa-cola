@@ -44,7 +44,7 @@ export const ContactFormMain = ({ mainForm }: { mainForm: boolean }) => {
         {}
       );
 
-  const { submit } = useFormSubmit({
+  const { submit,loading } = useFormSubmit({
     routeUrls: [
       `${process.env.NEXT_PUBLIC_ROUTE_URL}/api/user/send-email`,
       `${process.env.NEXT_PUBLIC_ROUTE_URL}/api/user/submit-form`
@@ -209,8 +209,9 @@ export const ContactFormMain = ({ mainForm }: { mainForm: boolean }) => {
             <Button
               type="submit"
               className="col-span-2 h-14 flex justify-center items-center text-xl font-semibold bg-yellow-400 text-black hover:bg-transparent hover:text-yellow-400 hover:border hover:border-yellow-400 rounded-md"
+              disabled={loading}
             >
-              Submit
+              {loading?"submitting...":"Submit"}
             </Button>
           </form>
         </Form>
